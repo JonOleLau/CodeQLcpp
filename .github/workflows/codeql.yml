@@ -62,7 +62,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Compile project
-      run: make && make install
+      run: make *.c && make install
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
